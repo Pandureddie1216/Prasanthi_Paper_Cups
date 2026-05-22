@@ -1,0 +1,1059 @@
+<!-- =========================
+PRASANTHI PAPER CUPS
+MODERN BUSINESS WEBSITE
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Prasanthi Paper Cups</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fffdf7;
+    overflow-x:hidden;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(18px);
+    padding:18px 0;
+    transition:.3s;
+    box-shadow:0 4px 30px rgba(0,0,0,.06);
+}
+
+.navbar-brand{
+    font-size:30px;
+    font-weight:800;
+    background:linear-gradient(90deg,#ff6b00,#ffb703);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.nav-link{
+    color:#1e293b !important;
+    font-weight:600;
+    margin-left:18px;
+    position:relative;
+}
+
+.nav-link::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:3px;
+    background:#ff6b00;
+    transition:.3s;
+    border-radius:10px;
+}
+
+.nav-link:hover::after{
+    width:100%;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url('img/papercup-banner.jpg');
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+    position:relative;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:#ffb703;
+    filter:blur(180px);
+    top:-100px;
+    right:-100px;
+    opacity:.3;
+}
+
+.hero h1{
+    font-size:72px;
+    font-weight:800;
+    line-height:1.1;
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:25px;
+    color:#f1f5f9;
+    max-width:650px;
+    line-height:1.7;
+}
+
+.hero-btn{
+    margin-top:40px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-main{
+    background:linear-gradient(135deg,#ff6b00,#ffb703);
+    color:white;
+    padding:15px 38px;
+    border-radius:60px;
+    text-decoration:none;
+    font-weight:700;
+    display:inline-block;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(255,107,0,.35);
+}
+
+.btn-main:hover{
+    transform:translateY(-5px);
+    color:white;
+    box-shadow:0 20px 35px rgba(255,107,0,.4);
+}
+
+.btn-outline-custom{
+    border:2px solid white;
+    padding:14px 35px;
+    border-radius:60px;
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.btn-outline-custom:hover{
+    background:white;
+    color:#ff6b00;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+    padding:110px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:52px;
+    font-weight:800;
+    margin-bottom:70px;
+    color:#0f172a;
+    position:relative;
+}
+
+.section-title::after{
+    content:'';
+    width:120px;
+    height:5px;
+    background:linear-gradient(90deg,#ff6b00,#ffb703);
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-18px;
+    border-radius:20px;
+}
+
+/* ================= ABOUT ================= */
+
+.about-img{
+    overflow:hidden;
+    border-radius:35px;
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+}
+
+.about-img img{
+    width:100%;
+    transition:.5s;
+}
+
+.about-img:hover img{
+    transform:scale(1.08);
+}
+
+.about-content h2{
+    font-size:46px;
+    font-weight:800;
+    color:#0f172a;
+}
+
+.about-content p{
+    margin-top:25px;
+    color:#64748b;
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* ================= CARDS ================= */
+
+.modern-card{
+    background:white;
+    border-radius:35px;
+    overflow:hidden;
+    height:100%;
+    transition:.4s;
+    border:none;
+    box-shadow:0 15px 50px rgba(0,0,0,.07);
+}
+
+.modern-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 60px rgba(255,107,0,.15);
+}
+
+.modern-card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.modern-card:hover img{
+    transform:scale(1.08);
+}
+
+.modern-card-body{
+    padding:35px;
+}
+
+.modern-card-body h4{
+    font-size:28px;
+    font-weight:700;
+    color:#0f172a;
+}
+
+.modern-card-body p{
+    color:#64748b;
+    margin-top:15px;
+    line-height:1.8;
+}
+
+/* ================= PRODUCT BADGE ================= */
+
+.product-badge{
+    display:inline-block;
+    margin-top:18px;
+    background:linear-gradient(135deg,#ffedd5,#fde68a);
+    color:#ea580c;
+    padding:10px 20px;
+    border-radius:50px;
+    font-size:14px;
+    font-weight:700;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-box{
+    background:white;
+    padding:55px;
+    border-radius:35px;
+    box-shadow:0 15px 60px rgba(0,0,0,.08);
+}
+
+.contact-box h3{
+    font-size:38px;
+    font-weight:800;
+    margin-bottom:35px;
+    color:#0f172a;
+}
+
+.contact-box p{
+    font-size:18px;
+    margin-bottom:25px;
+    color:#475569;
+    line-height:1.8;
+}
+
+.contact-box i{
+    color:#ff6b00;
+    margin-right:10px;
+}
+
+iframe{
+    border-radius:35px;
+    box-shadow:0 15px 50px rgba(0,0,0,.08);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+    color:white;
+    padding:60px 0;
+    text-align:center;
+}
+
+footer h4{
+    font-size:34px;
+    font-weight:800;
+}
+
+footer p{
+    color:#cbd5e1;
+    margin-top:15px;
+}
+
+/* ================= WHATSAPP ================= */
+
+.whatsapp{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#25d366,#128c7e);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:34px;
+    text-decoration:none;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+    z-index:999;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.12);
+    color:white;
+}
+
+/* ================= BACKGROUND COLORS ================= */
+
+#manufacturing{
+    background:linear-gradient(180deg,#fff7ed,#ffffff);
+}
+
+#products{
+    background:linear-gradient(180deg,#ffffff,#fffdf7);
+}
+
+#contact{
+    background:linear-gradient(180deg,#fff7ed,#ffffff);
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:991px){
+
+    .hero{
+        text-align:center;
+        padding:120px 0;
+    }
+
+    .hero h1{
+        font-size:48px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .btn-outline-custom{
+        margin-left:0;
+        margin-top:15px;
+        display:inline-block;
+    }
+
+    .section-title{
+        font-size:38px;
+    }
+
+    .about-content{
+        margin-top:40px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        Prasanthi Paper Cups
+      </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#manufacturing" class="nav-link">Manufacturing</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#products" class="nav-link">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-7">
+
+          <h1>
+            Premium Eco-Friendly Paper Cup Manufacturer
+          </h1>
+
+          <p>
+            High quality disposable paper cups for tea,
+            coffee, juice and commercial usage.
+          </p>
+
+          <div class="hero-btn">
+
+            <a href="#products" class="btn-main">
+              View Products
+            </a>
+
+            <a href="tel:+918978884783" class="btn-outline-custom">
+              Call Now
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        About Our Company
+      </h2>
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-6">
+
+          <div class="about-img">
+
+            <img src="img/factory-unit.jpg">
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="about-content">
+
+            <h2>
+              Prasanthi Paper Cups
+            </h2>
+
+            <p>
+              We are a trusted paper cup manufacturing unit located
+              in Andhra Pradesh delivering premium quality disposable
+              paper cups for tea shops, cafes, restaurants,
+              events and wholesale businesses.
+            </p>
+
+            <p>
+              Our production process follows high hygiene standards
+              with advanced machinery ensuring durability,
+              leak proof quality and eco-friendly materials.
+            </p>
+
+            <p>
+              Under the leadership of
+              <b>T Chandra Shekar Reddy</b>,
+              we are committed to quality,
+              timely delivery and customer satisfaction.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MANUFACTURING -->
+
+  <section id="manufacturing" style="background:#eef4ff;">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Manufacturing Unit
+      </h2>
+
+      <div class="row g-4">
+
+        <div class="col-lg-4">
+
+          <div class="modern-card">
+
+            <img src="img/machine1.jpg">
+
+            <div class="modern-card-body">
+
+              <h4>
+                Automatic Machines
+              </h4>
+
+              <p>
+                Advanced fully automatic paper cup
+                production machines for high precision.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+          <div class="modern-card">
+
+            <img src="img/paper-roll.jpg">
+
+            <div class="modern-card-body">
+
+              <h4>
+                Premium Raw Materials
+              </h4>
+
+              <p>
+                High quality food-grade paper rolls
+                ensuring safety and durability.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+          <div class="modern-card">
+
+            <img src="img/production.jpg">
+
+            <div class="modern-card-body">
+
+              <h4>
+                Bulk Production
+              </h4>
+
+              <p>
+                Large scale manufacturing support
+                with fast delivery capability.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRODUCTS -->
+
+  <section id="products">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Our Products
+      </h2>
+
+      <div class="row g-4">
+
+        <div class="col-lg-4">
+
+          <div class="modern-card">
+
+            <img src="img/tea-cup.jpg">
+
+            <div class="modern-card-body">
+
+              <h4>
+                Tea Paper Cups
+              </h4>
+
+              <p>
+                Leak proof disposable tea cups
+                suitable for hotels and tea shops.
+              </p>
+
+              <span class="product-badge">
+                90ml • 150ml
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+          <div class="modern-card">
+
+            <img src="img/coffee-cup.jpg">
+
+            <div class="modern-card-body">
+
+              <h4>
+                Coffee Cups
+              </h4>
+
+              <p>
+                Premium quality coffee paper cups
+                for cafes and restaurants.
+              </p>
+
+              <span class="product-badge">
+                150ml • 250ml
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-4">
+
+          <div class="modern-card">
+
+            <img src="img/juice-cup.jpg">
+
+            <div class="modern-card-body">
+
+              <h4>
+                Juice Cups
+              </h4>
+
+              <p>
+                Eco-friendly cold beverage cups
+                with durable build quality.
+              </p>
+
+              <span class="product-badge">
+                250ml • 350ml
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact" style="background:#eef4ff;">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Contact Us
+      </h2>
+
+      <div class="row">
+
+        <div class="col-lg-5">
+
+          <div class="contact-box h-100">
+
+            <h3>
+              Get In Touch
+            </h3>
+
+            <p>
+              <i class="bi bi-person-fill"></i>
+              T Chandra Shekar Reddy
+            </p>
+
+            <p>
+              <i class="bi bi-telephone-fill"></i>
+              +91 8978884783
+            </p>
+
+            <p>
+              <i class="bi bi-telephone-fill"></i>
+              +91 8125466599
+            </p>
+
+            <p>
+              <i class="bi bi-geo-alt-fill"></i>
+              22FC+WVP, Kuruvelli,
+              Chendragiri,
+              Andhra Pradesh 515871
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-7">
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d240.8388361201711!2d77.02221228389993!3d15.024791628236184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb723cbe684f8cb%3A0x68a938865a8a6cb4!2sPrasanthi%20Paper%20Cups!5e0!3m2!1sen!2sus!4v1779443242569!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- ================= MODERN FOOTER ================= -->
+
+<footer class="modern-footer">
+
+  <div class="container">
+
+    <div class="row align-items-center gy-5">
+
+      <!-- LEFT -->
+
+      <div class="col-lg-5">
+
+        <h2 class="footer-logo">
+          Prasanthi Paper Cups
+        </h2>
+
+        <p class="footer-text mt-4">
+          Premium Eco-Friendly Paper Cup Manufacturer
+          delivering quality disposable paper cups
+          for tea, coffee, juice, cafes, restaurants,
+          events and wholesale businesses.
+        </p>
+
+      </div>
+
+      <!-- CENTER -->
+
+      <div class="col-lg-3">
+
+        <h5 class="footer-heading">
+          Quick Links
+        </h5>
+
+        <ul class="footer-links">
+
+          <li>
+            <a href="#home">Home</a>
+          </li>
+
+          <li>
+            <a href="#about">About</a>
+          </li>
+
+          <li>
+            <a href="#manufacturing">Manufacturing</a>
+          </li>
+
+          <li>
+            <a href="#products">Products</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="col-lg-4">
+
+        <h5 class="footer-heading">
+          Contact Info
+        </h5>
+
+        <div class="footer-contact">
+
+          <p>
+            <i class="bi bi-telephone-fill"></i>
+            +91 8978884783
+          </p>
+
+          <p>
+            <i class="bi bi-telephone-fill"></i>
+            +91 8125466599
+          </p>
+
+          <p>
+            <i class="bi bi-geo-alt-fill"></i>
+            Kuruvelli, Chandragiri,
+            Andhra Pradesh
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- LINE -->
+
+    <div class="footer-line"></div>
+
+    <!-- BOTTOM -->
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Prasanthi Paper Cups.
+        All Rights Reserved.
+      </p>
+
+      <p>
+        Designed & Developed by
+        <span>Pandu Reddy MG</span>
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+<!-- ================= FOOTER CSS ================= -->
+
+<style>
+
+.modern-footer{
+    background:
+    linear-gradient(135deg,#0f172a,#1e293b,#111827);
+
+    color:white;
+    padding:90px 0 35px;
+    position:relative;
+    overflow:hidden;
+}
+
+.modern-footer::before{
+    content:'';
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:#ff6b00;
+    filter:blur(180px);
+    opacity:.12;
+    top:-180px;
+    right:-100px;
+}
+
+.footer-logo{
+    font-size:42px;
+    font-weight:800;
+
+    background:linear-gradient(90deg,#ffb703,#ff6b00);
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.footer-text{
+    color:#cbd5e1;
+    line-height:1.9;
+    font-size:17px;
+    max-width:420px;
+}
+
+.footer-heading{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:25px;
+    color:white;
+}
+
+.footer-links{
+    list-style:none;
+    padding:0;
+}
+
+.footer-links li{
+    margin-bottom:15px;
+}
+
+.footer-links a{
+    color:#cbd5e1;
+    text-decoration:none;
+    transition:.3s;
+    font-size:16px;
+}
+
+.footer-links a:hover{
+    color:#ffb703;
+    padding-left:8px;
+}
+
+.footer-contact p{
+    color:#cbd5e1;
+    margin-bottom:18px;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.footer-contact i{
+    color:#ffb703;
+    margin-right:10px;
+}
+
+.footer-line{
+    width:100%;
+    height:1px;
+    background:rgba(255,255,255,.1);
+    margin:50px 0 25px;
+}
+
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.footer-bottom p{
+    margin:0;
+    color:#94a3b8;
+    font-size:15px;
+}
+
+.footer-bottom span{
+    color:#ffb703;
+    font-weight:700;
+}
+
+/* MOBILE */
+
+@media(max-width:991px){
+
+    .modern-footer{
+        text-align:center;
+    }
+
+    .footer-text{
+        margin:auto;
+    }
+
+    .footer-bottom{
+        justify-content:center;
+        text-align:center;
+    }
+
+}
+
+</style>
+
+  <!-- WHATSAPP -->
+
+  <a href="https://wa.me/918978884783" class="whatsapp">
+
+    <i class="bi bi-whatsapp"></i>
+
+  </a>
+
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
